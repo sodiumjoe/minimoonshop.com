@@ -1,0 +1,45 @@
+body {
+  background: url('/img/170128_Mimi_Moon7814.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+}
+#nav {
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+#logo > img {
+  width: 220px;
+}
+#links {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+}
+.nav-link {
+  text-decoration: none;
+  margin-left: 20px;
+  color: black;
+}
+#social {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+.social-link > img {
+  width: 30px;
+  padding: 30px 10px;
+}

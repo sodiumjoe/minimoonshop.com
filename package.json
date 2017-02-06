@@ -1,0 +1,27 @@
+{
+  "name": "minimoonshop.com",
+  "version": "1.0.0",
+  "description": "website for minimoon",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf public",
+    "html": "pug src/*.pug --out public",
+    "svg": "svgo -f src/img -o public/img",
+    "img": "imagemin src/img/*.{jpg,png} -o public/img",
+    "css": "postcss src/index.css -o public/index.css -u autoprefixer -u cssnano",
+    "build": "npm run html && npm run svg && npm run img && npm run css"
+  },
+  "author": "Joe Moon <joe@xoxomoon.com>",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^6.7.2",
+    "cssnano": "^3.10.0",
+    "imagemin-cli": "^3.0.0",
+    "postcss": "^5.2.12",
+    "postcss-cli": "^2.6.0",
+    "pug": "^2.0.0-beta11",
+    "svgo": "^0.7.2"
+  },
+  "main": "index.js",
+  "devDependencies": {}
+}
