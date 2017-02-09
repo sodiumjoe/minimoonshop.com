@@ -1,8 +1,5 @@
 body {
   background: url('/img/170128_Mimi_Moon7814.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   margin: 0;
 }
