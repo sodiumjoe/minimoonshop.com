@@ -1,7 +1,12 @@
 body {
+  margin: 0;
   background: url('/img/170128_Mimi_Moon7814.jpg') no-repeat center center fixed;
   background-size: cover;
-  margin: 0;
+  font-family: 'proxima-nova', sans-serif;
+}
+body.about {
+  background: url('/img/170128_Mimi_Moon7814.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 #nav {
   padding: 40px;
@@ -16,7 +21,6 @@ body {
   display: flex;
   padding: 0;
   margin: 0;
-  font-family: 'Helvetica Neue', sans-serif;
   font-size: 24px;
   font-weight: normal;
 }
@@ -24,6 +28,9 @@ body {
   text-decoration: none;
   margin-left: 20px;
   color: black;
+}
+#main {
+  display: flex;
 }
 #social {
   background-color: black;
