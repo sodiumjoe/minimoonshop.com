@@ -7,17 +7,18 @@ mixin layout(title)
       meta(name='viewport', content='width=device-width, initial-scale=1')
       title minimoon#{ title ? `- ${title}` : ''}
       link(rel='stylesheet', type='text/css', href='/index.css')
+      link(rel='icon', type='image/png', href='/img/favicon.png?v=2')
     body(class=title)
-      .content
+      #content
         nav#nav
           a#logo(href='/')
-            img(src='/img/Minimoon_black_wordmark.png', alt='minimoon')
-          ul#links
-            li.nav-item
-              a.nav-link(href='/about') about
-        block content
+            img(src='/img/MinimoonLogo.png', alt='minimoon')
+          ul
+            li
+              a(href='/about') about
+        block
         footer#footer
-          ul#social
+          ul
             -
               var items = [{
                 href: 'https://twitter.com/heyminimoon',
@@ -28,7 +29,7 @@ mixin layout(title)
                 src: '/img/instagram.svg',
                 alt: 'instagram',
               }, {
-                href: '#',
+                href: 'https://www.facebook.com/heyminimoon',
                 src: '/img/facebook.svg',
                 alt: 'facebook',
               }, {
@@ -40,9 +41,10 @@ mixin layout(title)
                 src: '/img/email.svg',
                 alt: 'email',
               }];
+
             each item in items
               li
-                a.social-link(href=item.href)
+                a(href=item.href)
                   img(src=item.src, alt=item.alt)
       script.
         (function(d){var config={kitId:'nmt7xmk',scriptTimeout:3000,async:true},h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
