@@ -7,10 +7,13 @@
 
 body {
   margin: 0;
-  background: url('/img/170128_Mimi_Moon7814.jpg') no-repeat center center fixed;
+  background: url('/img/Minimoon\ Teeny\ Teethers\ Floating\ Set\ Grid.jpg') no-repeat center center fixed;
   background-size: cover;
   font-family: 'proxima-nova', sans-serif;
-  font-size: 20px;
+  font-size: 16px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -22,6 +25,7 @@ a:visited {
 }
 
 #content {
+  flex: 1;
   padding: 40px;
 }
 
@@ -36,30 +40,52 @@ a:visited {
   justify-content: space-between;
 }
 
-#nav > ul {
-  list-style-type: none;
-  display: flex;
-  padding: 0;
-  margin: 0;
-  font-size: 24px;
-  font-weight: normal;
+/* press */
+
+body.press {
+  background-image: none;
+  background-color: #fff;
 }
 
-#nav > ul > li > a {
-  text-decoration: none;
-  margin-left: 20px;
+main#press {
+  padding-top: 30px;
+}
+
+.gallery-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 992px;
+  justify-content: center;
+}
+
+.gallery > figure {
+  margin: 0;
+  width: 50%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.gallery > figure > img {
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0,0,0,.3)
 }
 
 /* footer */
+
+#footer {
+  width: 100%;
+}
 
 #footer > ul {
   background-color: #323232;
   margin: 0;
   padding: 0;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
   list-style-type: none;
   display: flex;
   justify-content: center;
@@ -68,22 +94,4 @@ a:visited {
 #footer > ul > li > a > img {
   width: 30px;
   padding: 10px;
-}
-
-/* about */
-
-body.about {
-  background: url('/img/170128_Mimi_Moon7814.jpg') no-repeat center center fixed;
-  background-size: cover;
-}
-
-#about {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-#about > article {
-  width: 50%;
-  padding: 40px;
-  box-sizing: border-box;
 }

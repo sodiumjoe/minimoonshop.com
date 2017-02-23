@@ -9,3 +9,19 @@ include includes/layout.pug
       p.
         Please provide photo credits to Minimoon and link to <a href='#'>our
         Kickstarter page</a> during the launch.
+
+    -
+      var images = [
+        "Minimoon Teeny Teethers Floating Set Grid.jpg",
+        "Minimoon Teeny Teethers Floating Set.jpg",
+        "Minimoon Teeny Teethers Grab Grid.jpg",
+        "Minimoon Teeny Teethers Hand Reach.jpg",
+        "Minimoon Teeny Teethers Stack Hand.jpg",
+        "Minimoon Teeny Teethers Stacked Grid.jpg"
+      ];
+
+    .gallery-container
+      .gallery
+        each src in images
+          figure
+            img(src=`/img/press/${src}`)

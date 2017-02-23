@@ -13,39 +13,36 @@ mixin layout(title)
         nav#nav
           a#logo(href='/')
             img(src='/img/MinimoonLogo.png', alt='minimoon')
-          ul
-            li
-              a(href='/about') about
         block
-        footer#footer
-          ul
-            -
-              var items = [{
-                href: 'https://twitter.com/heyminimoon',
-                  src: '/img/twitter.svg',
-                  alt: 'twitter',
-              }, {
-                href: 'https://www.instagram.com/heyminimoon/',
-                src: '/img/instagram.svg',
-                alt: 'instagram',
-              }, {
-                href: 'https://www.facebook.com/heyminimoon',
-                src: '/img/facebook.svg',
-                alt: 'facebook',
-              }, {
-                href: 'https://www.pinterest.com/heyminimoon/',
-                src: '/img/pinterest.svg',
-                alt: 'pinterest',
-              }, {
-                href: 'mailto:beverly@minimoonshop.com',
-                src: '/img/email.svg',
-                alt: 'email',
-              }];
+      footer#footer
+        ul
+          -
+            var items = [{
+              href: 'https://twitter.com/heyminimoon',
+                src: '/img/twitter.svg',
+                alt: 'twitter',
+            }, {
+              href: 'https://www.instagram.com/heyminimoon/',
+              src: '/img/instagram.svg',
+              alt: 'instagram',
+            }, {
+              href: 'https://www.facebook.com/heyminimoon',
+              src: '/img/facebook.svg',
+              alt: 'facebook',
+            }, {
+              href: 'https://www.pinterest.com/heyminimoon/',
+              src: '/img/pinterest.svg',
+              alt: 'pinterest',
+            }, {
+              href: 'mailto:beverly@minimoonshop.com',
+              src: '/img/email.svg',
+              alt: 'email',
+            }];
 
-            each item in items
-              li
-                a(href=item.href)
-                  img(src=item.src, alt=item.alt)
+          each item in items
+            li
+              a(href=item.href)
+                img(src=item.src, alt=item.alt)
       script.
         (function(d){var config={kitId:'nmt7xmk',scriptTimeout:3000,async:true},h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
         })(document);

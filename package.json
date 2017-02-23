@@ -7,7 +7,7 @@
     "clean": "rm -rf public",
     "html": "pug src/*.pug --out public",
     "svg": "svgo -f src/img -o public/img",
-    "img": "imagemin src/img/*.{jpg,png} -o public/img",
+    "img": "imagemin src/img/*.{jpg,png} -o public/img && mkdir -p public/img/press && cp src/img/press/* public/img/press/",
     "css": "postcss src/index.css -o public/index.css -u autoprefixer -u cssnano",
     "build": "npm run html && npm run svg && npm run img && npm run css"
   },
