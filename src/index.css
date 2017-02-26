@@ -31,13 +31,15 @@ a:visited {
 
 /* header */
 
-#logo > img {
+#logo > img,
+.ks-badge {
   width: 220px;
 }
 
 #nav {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 /* press */
@@ -45,10 +47,6 @@ a:visited {
 body.press {
   background-image: none;
   background-color: #fff;
-}
-
-main#press {
-  padding-top: 30px;
 }
 
 .gallery-container {
