@@ -106,3 +106,11 @@ body.press {
   width: 30px;
   padding: 10px;
 }
+
+#mc_embed_signup {
+  clear:left;
+}
+
+#mc_embed_signup form {
+	padding: 0;
+}

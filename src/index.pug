@@ -1,4 +1,5 @@
 include includes/layout.pug
 +layout()
-  a(href='http://kck.st/2mA16oK')
-    img.ks-badge(src='/img/KickstarterButton.png', alt='Back us on Kickstarter!')
+  script(type="text/javascript", src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js", data-dojo-config="usePlainJson: true, isDebug: false")
+  script(type="text/javascript").
+    require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us4.list-manage.com","uuid":"4b4f38dee120a96f0a1768e90","lid":"632bf7e798"}) })
